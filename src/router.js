@@ -27,13 +27,13 @@ const router = new Router({
     },
     {
       path: "/cart",
-      name: "/cart",
+      name: "cart",
       component: () => import("@/views/cart/index.vue"),
       meta: {}
     },
     {
       path: "/my",
-      name: "/my",
+      name: "my",
       component: () => import("@/views/my/index.vue"),
       meta: {}
     }

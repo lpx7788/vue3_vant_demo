@@ -1,12 +1,12 @@
 <template>
   <div class="my">
-    <Header
+    <!-- <Header
       :rightText="$t('submit')"
       :title="$t('submit')"
       :leftArrow="false"
-    />
+    /> -->
     <div class="my_list">
-      <div class="my-store">2222222222222222222222</div>
+      <div class="my-store"></div>
       <div class="my-item"></div>
     </div>
     <Footer :active="3" />

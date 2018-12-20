@@ -4,14 +4,16 @@ import router from "./router";
 import store from "./store";
 import axios from "./request";
 import VueI18n from "vue-i18n";
-import { Lazyload, Toast } from "vant";
+import { Lazyload, Toast, Sku } from "vant";
 import "./registerServiceWorker";
 import "amfe-flexible";
 import "@/styles/base.less";
+import "vant/lib/button/style";
 
 Vue.use(Toast);
 // options 为可选参数，无则不传
 Vue.use(Lazyload);
+Vue.use(Sku);
 Vue.use(VueI18n);
 const i18n = new VueI18n({
   locale: "zh",
