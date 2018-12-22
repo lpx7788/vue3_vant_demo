@@ -1,6 +1,9 @@
 const autoprefixer = require("autoprefixer");
 const pxtorem = require("postcss-pxtorem");
 module.exports = {
+  chainWebpack: config => {
+    config.plugins.delete("fork-ts-checker"); // 禁用fork-ts-checker  不提示warming
+  },
   lintOnSave: true,
   css: {
     loaderOptions: {
